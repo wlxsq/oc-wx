@@ -1,0 +1,3 @@
+<!--pages/map/map.wxml-->
+ <map id="map" longitude="120.16929" latitude="30.24259" scale='18' bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map> 
+ <button bindtap="ontap">获取当前位置</button>

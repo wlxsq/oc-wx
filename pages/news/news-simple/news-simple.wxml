@@ -1,0 +1,18 @@
+<!--pages/news/news-simple/news-simple.wxml-->
+<template name="newsSimple">
+   <view class='logs-container'>
+     <view class='logs-author'>
+      <image src='/images/avatar/1.png'></image>
+      <text>{{create_time}}</text>
+     </view>
+        <text class='logs-title'>{{title}}</text>
+        <image class='logs-img' src='/images/post/bl.jpg'></image>
+        <text class='logs-content'>{{simple_content}}</text>
+    <view class='logs-show'>
+      <image src='/images/icon/chat.png'></image>
+      <text>{{conllection}}</text>
+      <image src='/images/icon/view.png'></image>
+      <text>{{reading}}</text>
+    </view>
+  </view>
+</template>

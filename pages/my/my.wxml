@@ -1,0 +1,6 @@
+<!--pages/my/my.wxml-->
+
+<view>
+    <!-- <button bindtap="getToken">获取Token</button> -->
+    <button bindtap="pay">立即支付</button>
+</view>

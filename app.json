@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/map/map",
+    "pages/libs/libs/libs",
+    "pages/logs/logs",
+    "pages/news/news",
+    "pages/my/my",
+    "pages/single/single",
+    "pages/news/news-simple/news-simple",
+    "pages/news/news-detail/news-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "OneCode",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/toolbar/home.png",
+        "selectedIconPath": "images/toolbar/home@selected.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "images/toolbar/home.png",
+        "selectedIconPath": "images/toolbar/home@selected.png"
+      },
+      {
+        "pagePath": "pages/libs/libs/libs",
+        "text": "题库",
+        "iconPath": "images/toolbar/category.png",
+        "selectedIconPath": "images/toolbar/category@selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/toolbar/my.png",
+        "selectedIconPath": "images/toolbar/my@selected.png"
+      }
+    ]
+  }
+}

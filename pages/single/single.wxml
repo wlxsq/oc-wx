@@ -1,0 +1,23 @@
+<!--pages/single/single.wxml-->
+<view class="page">
+  <scroll-view scroll-y style="height:200rpx;">
+      <label>{{problem.content}}</label>
+  </scroll-view>
+  <scroll-view scroll-y style="height:600rpx;">
+      <button style="background-color: {{bc[problem.selection[0].id]}};" bindtap='btnOpClick' class="btn_op" id="{{problem.selection[0].id}}">{{problem.selection[0].selection}}</button>
+      <button style="background-color: {{bc[problem.selection[1].id]}};" bindtap='btnOpClick' class="btn_op" id="{{problem.selection[1].id}}">{{problem.selection[1].selection}}</button>
+      <button style="background-color: {{bc[problem.selection[2].id]}};" bindtap='btnOpClick' class="btn_op" id="{{problem.selection[2].id}}">{{problem.selection[2].selection}}</button>
+      <button style="background-color: {{bc[problem.selection[3].id]}};" bindtap='btnOpClick' class="btn_op" id="{{problem.selection[3].id}}">{{problem.selection[3].selection}}</button>
+  </scroll-view>
+  <scroll-view scroll-y style="height:200rpx;">
+      <label>{{state}}</label>
+      <text>\n\n</text>
+      <label>{{answer}}</label>
+  </scroll-view>
+  <view class="page_bottom">
+    <button class="page_bottom_left" plain="true">♫</button>
+    <picker value="{{index}}" range="{{array}}" bindchange="bindPickerChange"> <view class="page_bottom_msg">{{index+1}}/{{count}}</view> </picker>
+    <button class="page_bottom_last" bindtap="lastProblem" plain="true">◀</button>
+    <button class="page_bottom_next" bindtap="nextProblem" plain="true">▶</button>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/libs/libs/libs.wxml-->
+<view>
+  <view class="page">
+    <view>
+      <button bindtap="singleTo">
+        <text style='color:red'>单选题</text>
+      </button>
+      <button>多选题</button>
+      <button>填空题</button>
+    </view>
+  </view>
+</view>

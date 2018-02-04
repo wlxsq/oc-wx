@@ -1,0 +1,23 @@
+<!--pages/news/news.wxml-->
+<import src="./news-simple/news-simple.wxml" />
+
+<view>
+  <swiper autoplay='true' indicator-dots='true' indicator-color='green' catchtap='onSwiper'>
+    <block>
+      <swiper-item>
+        <image src='/images/1.jpg' data-id='0'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/images/2.gif' data-id='1'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/images/3.jpg' data-id='2'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view wx:for="{{newsArr}}" wx:key="newsArr">
+    <view catchtap="ontap" data-id="{{item.id}}">
+      <template is="newsSimple" data="{{...item}}"></template>
+    </view>
+  </view>
+</view>

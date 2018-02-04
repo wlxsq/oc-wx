@@ -1,0 +1,101 @@
+/**app.wxss**/
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.page {
+  min-height: 100%;
+  font-size: 40rpx;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.page_scroll_item {
+  margin-bottom: 20rpx;
+  height: 120rpx;
+  display: flex;
+  background-color: #fbfbfb;
+  border: 2rpx solid;
+  border-color: #fbfbfb;
+  border-top-color: #ddd;
+  border-bottom-color: #ddd;
+}
+
+.scroll_item_left {
+  width: 630rpx;
+  text-align: center;
+  line-height: 120rpx;
+}
+
+.scroll_item_right {
+  width: 120rpx;
+  height: 120rpx;
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 120rpx;
+  border: 2rpx solid;
+  border-color: #fbfbfb;
+  border-left-color: #ddd;
+}
+
+.page_title {
+  text-align: left;
+  margin-top: 10rpx;
+  line-height: 50rpx;
+  font-size: 40rpx;
+}
+
+/**閫夋嫨棰橀€夐」**/
+
+.btn_op {
+  min-height: 100rpx;
+  text-align: left;
+  margin-bottom: 16rpx;
+  line-height: 50rpx;
+  font-size: 40rpx;
+}
+
+.page_bottom {
+  position: fixed;
+  width: 100%;
+  height: 100rpx;
+  bottom: 8rpx;
+  display: flex;
+}
+
+.page_bottom_left {
+  position: fixed;
+  left: 8rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.page_bottom_msg {
+  position: fixed;
+  left: 120rpx;
+  bottom: 8rpx;
+  width: 260rpx;
+  height: 50rpx;
+  font-size: 40rpx;
+}
+
+.page_bottom_last {
+  position: fixed;
+  right: 150rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.page_bottom_next {
+  position: fixed;
+  right: 8rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
